@@ -1,0 +1,20 @@
+case_type,route,week_of,expected_anomaly,expected_note_id,rationale
+anomaly,Ahmedabad-Mumbai,2025-01-20,true,,Visible route-level spike in both comparisons
+anomaly,Ahmedabad-Mumbai,2025-01-13,false,,Adjacent week without a comparable spike
+anomaly,Chennai-Bangalore,2025-02-24,true,,Large simultaneous history and peer increase
+anomaly,Chennai-Bangalore,2025-03-10,true,,Cost remains materially above both baselines
+anomaly,Delhi-Jaipur,2024-11-11,true,,Large simultaneous history and peer increase
+anomaly,Delhi-Jaipur,2024-11-04,false,,Prior week stays below configured unusual-increase levels
+anomaly,Mumbai-Pune,2025-09-15,true,,Sample-contract example with a strong peer divergence and positive history
+anomaly,Mumbai-Pune,2025-09-08,false,,Positive but not unusual versus configured levels
+anomaly,Mumbai-Pune,2025-11-10,false,,Peer level is high but own-history change is slightly negative
+anomaly,Kolkata-Bhubaneswar,2025-06-09,false,,Normal week with an explicit no-disruption note
+evidence,Ahmedabad-Mumbai,2025-01-20,,N002,Route and festival week align with an explicit surcharge
+evidence,Chennai-Bangalore,2025-02-24,,N001,Flood interval overlaps and higher detour cost is explicit
+evidence,Chennai-Bangalore,2025-03-03,,N001,Flood interval overlaps six days of the analyzed week
+evidence,Chennai-Bangalore,2025-03-10,,,Flood note ended before this Monday
+evidence,Chennai-Bangalore,2025-03-17,,,N009 states that the route returned to normal
+evidence,Delhi-Jaipur,2024-11-11,,,No route-and-week cost-increase note exists
+evidence,Mumbai-Pune,2025-06-23,,,Nationwide fuel note cannot explain a peer-only divergence
+evidence,Mumbai-Pune,2025-10-27,,,N010 explicitly says there was no rate change
+
